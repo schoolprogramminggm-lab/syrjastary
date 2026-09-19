@@ -19,6 +19,15 @@ export const ProjectColors = {
   subtle: '#9AA59D',
   surface: '#F3F5F1',
   border: '#E6EAE4',
+  // Ниже — токены, которых нет в сокращённой таблице CLAUDE.md, но которые
+  // есть в детальном дизайн-хендоффе (design_handoff_jastar_mobile/README.md)
+  // и нужны для точного соответствия макету экрана «Главная»: мягкие
+  // подложки бейджей вакансии/гранта и вторичный текст чипов.
+  orangeSoft: '#FFEAD5',
+  orangeText: '#C2410C',
+  blueSoft: '#E0ECFF',
+  textSecondary: '#4A554E',
+  danger: '#EF4444',
 } as const;
 
 export type ProjectColor = keyof typeof ProjectColors;
