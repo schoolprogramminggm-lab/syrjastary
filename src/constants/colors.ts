@@ -28,6 +28,13 @@ export const ProjectColors = {
   blueSoft: '#E0ECFF',
   textSecondary: '#4A554E',
   danger: '#EF4444',
+  // Экран «Профиль»: фон выполненного квеста, разделители и стрелки
+  // списков настроек, пункт «Выйти» — всё есть в README дизайн-хендоффа.
+  primaryTint: '#F7FDF9',
+  dangerText: '#DC5A5A',
+  dangerSoft: '#FDE8E8',
+  divider: '#F1F3EF',
+  chevron: '#C5CFC8',
 } as const;
 
 export type ProjectColor = keyof typeof ProjectColors;
