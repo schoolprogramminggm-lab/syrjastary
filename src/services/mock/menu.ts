@@ -1,0 +1,60 @@
+import type { MenuItem } from '@/types/menu';
+
+// Шесть разделов ровно как в макете design_handoff_jastar_mobile/Jastar-iOS.dc.html,
+// секция MENU. Реальный источник — src/services/, когда появятся живые счётчики.
+export const menuItems: MenuItem[] = [
+  {
+    id: 'events',
+    icon: 'calendar',
+    title: 'Мероприятия',
+    subtitle: 'предстоящих',
+    color: 'blue',
+    badgeKind: 'count',
+    count: 18,
+  },
+  {
+    id: 'jobs',
+    icon: 'briefcase',
+    title: 'Вакансии',
+    subtitle: 'открытых',
+    color: 'orange',
+    badgeKind: 'count',
+    count: 42,
+  },
+  {
+    id: 'programs',
+    icon: 'book-open',
+    title: 'Программы',
+    subtitle: 'активных',
+    color: 'primary',
+    badgeKind: 'count',
+    count: 24,
+  },
+  {
+    id: 'grants',
+    icon: 'award',
+    title: 'Гранты',
+    subtitle: 'доступных',
+    color: 'blue',
+    badgeKind: 'count',
+    count: 9,
+  },
+  {
+    id: 'chat',
+    icon: 'message-circle',
+    title: 'Чат',
+    subtitle: 'менторы на связи',
+    color: 'orange',
+    badgeKind: 'status',
+    statusLabel: 'online',
+  },
+  {
+    id: 'map',
+    icon: 'map-pin',
+    title: 'Карта',
+    subtitle: 'центров рядом',
+    color: 'blue',
+    badgeKind: 'count',
+    count: 6,
+  },
+];
