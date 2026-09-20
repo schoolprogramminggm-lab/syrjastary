@@ -28,6 +28,10 @@ export const ProjectColors = {
   blueSoft: '#E0ECFF',
   textSecondary: '#4A554E',
   danger: '#EF4444',
+  // Экран «Меню»: разделители строк и стрелки списков (тоже из README
+  // дизайн-хендоффа, разделы «Divider» и «Chevron»).
+  divider: '#F1F3EF',
+  chevron: '#C5CFC8',
 } as const;
 
 export type ProjectColor = keyof typeof ProjectColors;
