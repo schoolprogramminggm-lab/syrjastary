@@ -28,12 +28,17 @@ export const ProjectColors = {
   blueSoft: '#E0ECFF',
   textSecondary: '#4A554E',
   danger: '#EF4444',
-  // Экран «Профиль»: фон выполненного квеста, разделители и стрелки
-  // списков настроек, пункт «Выйти» — всё есть в README дизайн-хендоффа.
-  primaryTint: '#F7FDF9',
-  dangerText: '#DC5A5A',
-  dangerSoft: '#FDE8E8',
-  divider: '#F1F3EF',
+  // Цвет таймстемпов ("2 часа назад") на экране «Уведомления». В отличие
+  // от остальных добавленных токенов, в таблице README.md его нет — он
+  // встречается только как inline-значение в самих HTML-макетах (проверено
+  // по обоим файлам, Jastar-iOS.dc.html и Jastar-Android.dc.html).
+  timestamp: '#B4BEB6',
+  // Экран «QR-сканер»: тёмный фон экрана и стрелки/второстепенный текст
+  // на нём. darkScreenBg и chevron — из таблицы README.md. darkMuted
+  // (подпись-подсказка под рамкой) там не документирован, как и
+  // timestamp выше — источник тот же, сырое значение из HTML-макетов.
+  darkScreenBg: '#0A0D0B',
+  darkMuted: '#8B968E',
   chevron: '#C5CFC8',
 } as const;
 
