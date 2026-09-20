@@ -28,10 +28,11 @@ export const ProjectColors = {
   blueSoft: '#E0ECFF',
   textSecondary: '#4A554E',
   danger: '#EF4444',
-  // Экран «Меню»: разделители строк и стрелки списков (тоже из README
-  // дизайн-хендоффа, разделы «Divider» и «Chevron»).
-  divider: '#F1F3EF',
-  chevron: '#C5CFC8',
+  // Цвет таймстемпов ("2 часа назад") на экране «Уведомления». В отличие
+  // от остальных добавленных токенов, в таблице README.md его нет — он
+  // встречается только как inline-значение в самих HTML-макетах (проверено
+  // по обоим файлам, Jastar-iOS.dc.html и Jastar-Android.dc.html).
+  timestamp: '#B4BEB6',
 } as const;
 
 export type ProjectColor = keyof typeof ProjectColors;
