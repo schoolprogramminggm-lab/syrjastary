@@ -1,14 +1,31 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import { ProfileHeader } from '@/components/profile/ProfileHeader';
+import { QuestList } from '@/components/profile/QuestList';
+import { SettingsSection } from '@/components/profile/SettingsSection';
+import { StatsBlock } from '@/components/profile/StatsBlock';
+import {
+  accountItems,
+  profileStats,
+  profileUser,
+  quests,
+  systemItems,
+} from '@/services/mock/profile';
 
 export default function ProfileScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.label}>Профиль</Text>
-    </View>
+    <SafeAreaView edges={['top']} className="flex-1 bg-surface">
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerClassName="px-5 pb-[110px] pt-[14px]"
+      >
+        <ProfileHeader user={profileUser} />
+        <StatsBlock stats={profileStats} />
+        <QuestList quests={quests} activeCountLabel="3 активных" />
+        <SettingsSection title="Аккаунт" items={accountItems} />
+        <SettingsSection title="Система" items={systemItems} />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  label: { fontSize: 18, fontWeight: '600' },
-});
