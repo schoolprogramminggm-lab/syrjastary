@@ -33,6 +33,13 @@ export const ProjectColors = {
   // встречается только как inline-значение в самих HTML-макетах (проверено
   // по обоим файлам, Jastar-iOS.dc.html и Jastar-Android.dc.html).
   timestamp: '#B4BEB6',
+  // Экран «QR-сканер»: тёмный фон экрана и стрелки/второстепенный текст
+  // на нём. darkScreenBg и chevron — из таблицы README.md. darkMuted
+  // (подпись-подсказка под рамкой) там не документирован, как и
+  // timestamp выше — источник тот же, сырое значение из HTML-макетов.
+  darkScreenBg: '#0A0D0B',
+  darkMuted: '#8B968E',
+  chevron: '#C5CFC8',
 } as const;
 
 export type ProjectColor = keyof typeof ProjectColors;
